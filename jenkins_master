@@ -12,7 +12,7 @@ pipeline {
         stage('Tigger the Slave Jobs') {
             steps {
             script{
-                 def file = readFile "./me.txt"
+                 def file = readFile "./thun.txt"
                     def lines = file.readLines()[0].split(' ')
                     println lines[0]
                     println lines[1]
